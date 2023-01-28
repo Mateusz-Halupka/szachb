@@ -2,22 +2,22 @@ import * as React from "react"
 import { Link } from "gatsby"
 import "../style/menu.scss"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }) => {
+  return (
   <header
     style={{
-      backgroundColor: '#00000',
+      backgroundColor: 'black',
       marginBottom: `1.45em`,
-      marginTop: '1.45em',
-      alignItems: 'center',
+      //marginTop: '1.45em',
+      //alignItems: 'center',
     }}
   >
 <div class='menu'>
 <ul style={{ 
           display: "flex",
           flex: 1,
-          paddingTop: '20px',
-          paddingBottom: '20px',
-          backgroundColor: '#00000',
+          paddingTop: '1.45em',
+          paddingBottom: '1.45em',
       }}>
 <li id="start">
   <Link style={{
@@ -25,17 +25,24 @@ const Header = ({ siteTitle }) => (
         textDecoration: `none`,}} to="/">HOME</Link>
 </li>
 <li id="projects">
-  PROJEKTY
+<Link style={{
+        color: `#DADADA`,
+        textDecoration: `none`,}} to="/projects">PROJEKTY</Link>
 </li>
 <li id="team">
-  ZESPÓŁ PROJEKTOWY
+<Link style={{
+        color: `#DADADA`,
+        textDecoration: `none`,}} to="/team">ZESPÓŁ PROJEKTOWY</Link>
 </li>
 <li id="contact">
-  KONTAKT
+<Link style={{
+        color: `#DADADA`,
+        textDecoration: `none`,}} to="/contact">KONTAKT</Link>
 </li>
 </ul>
 </div>
   </header>
-)
+  )
+}
 
 export default Header
