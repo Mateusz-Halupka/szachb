@@ -15,9 +15,11 @@ const Header = ({ siteTitle }) => {
 <div class='menu'>
 <ul style={{ 
           display: "flex",
-          flex: 1,
+          //flex: 1,
           paddingTop: '1.45em',
           paddingBottom: '1.45em',
+          width: '66rem',
+          margin: '0 auto'
       }}>
 <li id="start">
   <Link style={{
